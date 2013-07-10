@@ -1,0 +1,19 @@
+INDEX VERSION 1.126+/anouvo/GIT/Repositories/GitHup/MyRepositories/ScalaSortingUtilities/.metadata/.plugins/org.eclipse.jdt.core
+763558429.index
+21789412.index
+1261235122.index
+91853418.index
+2115295912.index
+169281917.index
+996013831.index
+2638134321.index
+296343106.index
+2826381398.index
+3972725977.index
+943851074.index
+3159441709.index
+1042251356.index
+776123451.index
+3242724258.index
+1082327194.index
+1192126182.index
