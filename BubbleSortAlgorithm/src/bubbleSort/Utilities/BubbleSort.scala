@@ -68,10 +68,9 @@ object BubbleSort {
   /* A true scala version of the bubble sort algorithm using list and array */
   def bubbleSort[T <% Ordered[T]:ClassManifest](source:List[T]):List[T]= source match{
     case List() => List()
-    case lst::source =>
-      var array : Array[T] = (lst::source).toArray
+    case _ =>
+      var array : Array[T] = (source).toArray
       bubbleSort(array)
-      //lst::array.toList
       array.toList
   }
 
