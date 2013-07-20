@@ -42,20 +42,5 @@ object MergeSort {
     return genericMerge(genericMergeSort(left), genericMergeSort(right))
     
   }
-  
-  def mergeSort[T <% Ordered[T]:ClassManifest](list:List[T]):List[T]= list match{
-    case List() => list
-    case single::Nil => list
-    case _ =>
-      def merge[T <% Ordered[T]:ClassManifest](left:List[T],right:List[T]):List[T]= (left, right) match{
-        case (_, Nil)=>left
-        case (Nil, _)=>right
-        case (l::_left, r::_right)=>
-          if (l <= r) l::merge(_left,right)
-          else r::merge(left,_right)
-      }
-      val(left,right) = list.splitAt(list.length/2)
-      merge(mergeSort(left), mergeSort(right))
-  }
 
 }
